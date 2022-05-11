@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_demo/utils/const_fonts_key.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +28,14 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      backgroundColor: Colors.transparent,
+      body: Center(
+        child: Text(
+          "Welcome",
+          style: TextStyle(fontFamily: POPPINS_REGULAR),
+        ),
+      ),
+    );
   }
 }
